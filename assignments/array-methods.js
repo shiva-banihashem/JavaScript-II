@@ -68,7 +68,7 @@ console.log(fullName);
 let allCaps = [];
 allCaps= runners.map(objelement => {
     let newobj =objelement;
-    newobj.first_name = objelement.first_name.toUpperCase();
+    newobj.first_name = newobj.first_name.toUpperCase();
     console.log(newobj);
     return newobj;
     
