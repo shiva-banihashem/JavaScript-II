@@ -100,6 +100,29 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
-// Problem 2
+//Use forEach method to return a runner's record based on last name
 
+function displayrec (rec,lname) {
+  if (rec.last_name.toUpperCase() === lname) {
+    console.log(rec);
+  };
+  
+};
+let RecFound = {};
+let lastname = ("Vuittet").toUpperCase();
+console.log(lastname);
+runners.forEach(obj => displayrec(obj, lastname));
+
+// Problem 2
+//decrease all donations by 2.5%
+updatedRec =[];
+updatedRec=runners.map((objelement,updateDonation) => {
+  console.log(updateDonation);
+  let newobj =objelement;
+  newobj.donation = newobj.donation*0.25
+  
+  return newobj;
+  
+});
+console.log(updatedRec);
 // Problem 3
